@@ -22,12 +22,12 @@ public class Setup {
     Direction currDir = Direction.NONE;
     GameCharacters gman;
 
-    public GameCharacters runGmanRun(String[] args) throws IllegalArgumentException {
+    public GameCharacters runGmanRun(String input) throws IllegalArgumentException {
 
-        if(args == null)
+        if(input == null)
         throw new InvalidFileNameException("File name is empty or wrong");
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(args[0]))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(input))) {
 
             //reading Source cordinates
             String line = reader.readLine();
