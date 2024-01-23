@@ -9,7 +9,7 @@ public class App {
 	public static void main(String[] args) throws IOException {
 		//System.out.println(" Welcome to \"Power The of GMan\"");
 		Setup config = new Setup();
-        GameCharacters gman = config.runGmanRun(new String[]{"input.txt"});
+        GameCharacters gman = config.runGmanRun(args[0]);
         gman.printPower();				
 	}
 
